@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Projects |Occxlnce Creative Studio</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" href="./style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+<link rel="stylesheet" href="https://use.typekit.net/zhq0vyf.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" href="oversight.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/nabar.css">
+
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">OCCXLNCE</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Work</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="nav-bg"></div>
+
+
+<br>
+<br>
+<br>
+
+
+<div class="cursor-wrap js-cursor-wrap">
+  <div class="cursor js-cursor">
+    <svg height="60" width="60" class="circle">
+      <circle cx="30" cy="30" r="26" stroke="#FD1F03" stroke-width="1.9" fill="transparent" />
+    </svg>
+  </div>
+</div>
+
+
+<!-- JAVASCRIPT FILES -->
+<script src="css/cursor.js">
+</script>
+<script src="oversight.js">
+</script>
+<script src="css/nabar.js">
+</script>
+<script src="dropdown.js">
+</script>
+
+<script>
+
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+const navbg = document.querySelector('.nav-bg');
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+    navbg.classList.toggle('active');
+});
+
+</script>
+
+</body>
+</html>
